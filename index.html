@@ -2,27 +2,33 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>HTML basics assignment</title>
   </head>
   <body>
 
-    <div class="nav--desktop">
+    <!-- Overall, there's a bunch of class ="xyz" in here that I don't recognise, but it's all just pulling 'xyz' from the .css for the site.-->
+    <div class="nav--desktop"> <!-- none of the class properties will appear properly, since this html file does not have the necessary css to pull said properties from.-->
+
           <div class="mobile-wrapper">
-            <div class="header-cart__wrapper hidden-lg">
-              <a href="/cart" class="CartToggle header-cart"><i class="icon icon-ra_bag"></i></a>
-              <span class="header-cart__bubble cartCount has-items cartCount-updater  hidden-count">0</span>
+            <div class="header-cart__wrapper hidden-lg"> <!--My gut says the double underscore here, and repeatedly used later in the file, is just part of the class name, and has no sigifigance to the html.-->
+              <a href="/cart" class="CartToggle header-cart"><i class="icon icon-ra_bag"></i></a> <!-- the space between the classes used twice here I think assigns this particular anchor the properties from multiple classes.-->
+              <!--Atom says the <i> tag used in the above line is another way to do italics-->
+              <span class="header-cart__bubble cartCount has-items cartCount-updater  hidden-count">0</span> <!-- more '__' and '  ' here.-->
             </div>
             <div class="logo-wrapper ">
-              <h1 class="h4 header-logo" itemscope="" itemtype="http://schema.org/Organization">
-                <a href="/" itemprop="url"><i class="icon icon-ra_primary-logo"></i></a>
+              <h1 class="h4 header-logo" itemscope="" itemtype="http://schema.org/Organization"> <!--itemscope and itemtype are new properties to me-->
+                <a href="/" itemprop="url"><i class="icon icon-ra_primary-logo"></i></a> <!--As is itemprop-->
               </h1>
             </div>
             <a href="" class="menuToggle header-hamburger"></a>
           </div>
+
+          <!-- almost everything unusual popping up in the below div I already called out in the html above ('  ' and '__')-->
           <div class="header-menu nav-wrapper">
             <ul class="main-menu accessibleNav">
               <li class="grandparent  kids-4">
-                <a href="#" class="nav-link" id="Shop">Shop</a>
+                <a href="#" class="nav-link" id="Shop">Shop</a> <!-- id is a new property-->
+                <!--I'm not sure where href="#" is supposed to point. I get that it's pointing to anotehr html file, but where does the # point?-->
                 <a href="#" class="nav-carat"><span class="plus">+</span><span class="minus">-</span></a>
               </li>
               <li class="child  kids-0">
@@ -53,7 +59,8 @@
               </li>
             </ul>
           </div>
+
         </div>
-        
+
   </body>
 </html>
